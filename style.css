@@ -5,6 +5,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -43,4 +44,12 @@ h1.logo-text {
 
 main {
     width: 70%;
+    background-color: rgb(237, 237, 237);
+}
+
+form fieldset {
+    background-color: white;
+    border: none;
+    margin: 0px;
+    box-shadow: 0px 3px 10px rgb(194, 194, 194);
 }
