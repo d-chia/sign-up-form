@@ -6,3 +6,13 @@
 * {
     box-sizing: border-box;
 }
+
+.visual {
+    background-image: url("./img/fern_background.jpeg");
+    background-repeat: none;
+    background-size: auto;
+}
+
+h1.logo-text {
+    font-family: "norse-bold", sans-serif;
+}
