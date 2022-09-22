@@ -50,6 +50,15 @@ main {
     background-color: rgb(237, 237, 237);
 }
 
+.info-section {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 form fieldset {
     background-color: white;
     border: none;
@@ -66,19 +75,22 @@ form fieldset p {
     font-weight: 600;
 }
 
-.info-section {
-    margin-top: 150px;
-    margin-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 20px;
-    font-weight: 600;
-}
 
 .login-text,
 button[type="submit"] {
     margin-left: 50px;
     margin-top: 50px;
+}
+
+.login-text a {
+    text-decoration: none;
+    color:rgb(1, 91, 1);
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    cursor: pointer;
+    color: rgba(1, 190, 1, 0.583);
 }
 
 button[type="submit"] {
@@ -104,17 +116,6 @@ button[type="submit"]:active {
     cursor: pointer;
     transform: scale(0.98);
     box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.24);
-}
-
-.login-text a {
-    text-decoration: none;
-    color:rgb(1, 91, 1);
-    font-weight: bold;
-}
-
-.login-text a:hover {
-    cursor: pointer;
-    color: rgba(1, 190, 1, 0.583);
 }
 
 input[type="text"],
