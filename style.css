@@ -15,12 +15,14 @@ body {
     align-items: stretch;
 }
 
+
 .visual {
     width: 30%;
     background-image: url("./img/fern_background.jpeg");
     background-repeat: none;
     background-size: cover;
 }
+
 
 .logo-banner {
     width: 100%;
@@ -145,9 +147,36 @@ span.field-element {
     margin-bottom: 20px;
 }
 
+
 label {
     color: gray;
     text-transform: uppercase;
     font-size: 12px;
     margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width:1000px) {
+    
+    .field-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:750px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visual {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
 }
