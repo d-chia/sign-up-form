@@ -10,7 +10,7 @@
 
 body {
     margin: 0px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: stretch;
 }
@@ -53,6 +53,15 @@ form fieldset {
     border: none;
     margin: 0px;
     box-shadow: 0px 3px 10px rgb(194, 194, 194);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form fieldset p {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .info-section {
@@ -61,5 +70,84 @@ form fieldset {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 20px;
+    font-weight: 600;
+}
+
+.login-text,
+button[type="submit"] {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+button[type="submit"] {
+    background-color: rgb(1, 91, 1);
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(237, 237, 237);
+    font-size: 14px;
     font-weight: bold;
+    border: none;
+    box-shadow: 0px 2px 2px rgb(194, 194, 194);
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(2, 117, 2);
+    cursor: pointer;
+}
+
+button[type="submit"]:active {
+    background-color: rgb(2, 117, 2);
+    cursor: pointer;
+    transform: scale(0.98);
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.24);
+}
+
+.login-text a {
+    text-decoration: none;
+    color:rgb(1, 91, 1);
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    cursor: pointer;
+    color: rgba(1, 190, 1, 0.583);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    height: 2em;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 2px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(1, 190, 1, 0.583);
+    box-shadow: 0px 2px 5px rgb(194, 194, 194);
+}
+
+input::placeholder {
+    color: rgb(194, 194, 194);
+}
+
+span.field-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
